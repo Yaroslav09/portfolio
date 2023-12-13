@@ -27,7 +27,6 @@ p {
 /* <!-- main logo / nav --> */
 
 header {
-  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -236,25 +235,152 @@ header h1 {
   transition-duration: 1s;
 }
 
+@media (max-width:1069px) {
 
-
-/* .hero-banner h2 {
-  position: absolute;
-  bottom: 40px;
-  right: 100px;
-
-  width: 500px;
-  height: 90px;
-  color: #31343D;
-  font-size: 28px;
-  font-weight: 600;
-  text-align: center;
-  background-color: #92CCCE;
-
-} */
-
-@media (min-width:600px) {
-
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+    height: 120px;
+  }
+
+  header h1 {
+    font-size: 32px;
+    padding:0px 40px;    
+  }
+
+  .user_avatar {
+    width: 50px;
+    top: 35px;
+  }
+
+ .navbar ul li {  
+    margin: 0px 6px;
+    padding: 2px 6px;
+    
+  }
+
+  .navbar ul li a {    
+    font-size: 20px;    
+  }
+
+  /* <!-- hero banner --> */
+
+  .hero-banner {
+    height: 350px;    
+  }
+
+  .hero-text {   
+    bottom: 30px;
+    right: 40px;    
+    font-size: 22px;    
+  }
+
+ /* main-content */
+
+  .page-wrapper {
+    margin-top: 20px;
+  }
+
+  .page-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-section h2 {
+    text-align: center;
+    border-right: 0px;
+    color: #445877;
+    padding-right: 0px;
+    font-size: 36px;       
+  }
+
+  br { content: ""; }
+
+  /* <!-- about me --> */
+
+  .about-block {
+    display: flex;
+    flex-direction: column;  
+    margin: 0px 15px;    
+  }  
+  
+  .about-text {
+    margin: 15px 0px;    
+  }
+
+  .work-example {
+    margin-left: 20px;
+  }
+
+
+  /* <!-- portfolio container --> */
+
+  .work-example {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 15px 25px;  
+  }
+
+  .work-example-item {
+    margin-bottom: 10px;
+  }
+
+  .social {
+    display: block;    
+  }  
+  .social a {
+    margin: 0px 8px;
+  }
+ 
+}
+
+@media (max-width:520px) {
+  header {
+    height: 90px;
+  }
+
+  .user_avatar {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 20px;
+    padding:0px 10px;    
+  }
+
+  .user_avatar {
+    width: 50px;
+    top: 35px;
+  }
+
+ .navbar ul li {  
+    margin: 0px 6px;
+    padding: 0px;
+    
+  }
+
+  .navbar ul li a {    
+    font-size: 16px;    
+  }
+
+  /* <!-- hero banner --> */
+
+  .hero-banner {
+    height: 300px;    
+  }
+
+  .hero-text {   
+    bottom: 20px;
+    right: 0;
+    margin: 0 auto;    
+    font-size: 18px;    
+  }
+
 }
 
